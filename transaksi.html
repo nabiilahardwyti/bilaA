@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAS Aplikasi Perpustakaan</title>
+    <link rel="stylesheet" href="styles css.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.perpus.png" alt="Logo Perpustakaan" />
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index_UAS.html">Beranda</a></li>
+                    <li><a href="profilperpus.html">Profil</a></li>
+                    <li><a href="loginperpus.html">Login</a></li>
+                    <li><a href="transaksi.html">Transaksi</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+        <section id="transaksi" class="card">
+            <h2>Form Transaksi</h2>
+            <form id="transaksiForm">
+               
+                <div class="form-group">
+                    <label for="nama peminjam">Nama peminjam:</label>
+                    <input type="text" id="nama peminjam" name="nama peminjam" required><br>
+                </div>
+                <div class="form-group">
+                    <label for="tanggal peminjaman">tanggal peminjaman:</label>
+                    <input type="date" id="tanggal pengembalian" name="tanggal peminjaman" required><br>
+                </div>
+                <div class="form-group">
+                    <label for="tanggal pengembalian">tanggal pengembalian:</label>
+                    <input type="date" id="tanggal pengembalian" name="tanggal pengembalian" required><br>
+                </div>
+                <div class="form-group">
+                    <label for="penulis"> Penulis:</label>
+                    <input type="text" id="penulis" name="penulis" required><br>
+                </div>
+                <div class="form-group">
+                    <label for="judul buku"> judul buku:</label>
+                    <input type="text" id="judul buku" name="judul buku" required><br>
+                </div>
+                 <label for="kategori">kategori:</label>
+                    <input type="text" id="kategori" name="kategori" required><br>
+                </div>
+
+                <button type="submit">Simpan</button>
+            </form>
+
+            <div id="message"></div>
+
+            <h3>Daftar Transaksi</h3>
+            <table id="tabelTransaksi">
+                <thead>
+                    <tr>
+                        <th>Nama peminjam</th>
+                        <th>tanggal peminjaman</th>
+                        <th>tanggal pengembalian</th>
+                        <th>judul buku</th>
+                        <th>penulis</th>
+                        <th>kategori</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+            </table>
+        </section>
+        <p> <a href="index_UAS.html"> kembali ke beranda</a></p>
+        
+        <script src="jsscript.js"></script>
+        </body>
+        </html>
